@@ -15,7 +15,7 @@ plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-for file in ~/.config-scripts/.{aliases,functions}; do
+for file in ~/.config-files/.{aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
