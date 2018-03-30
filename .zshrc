@@ -1,19 +1,26 @@
+# Fix correct pathes
 export ZSH=/Users/jcelik/.oh-my-zsh
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
+
+#sudoless npm https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md
+NPM_PACKAGES="${HOME}/.npm-packages"
+PATH="$NPM_PACKAGES/bin:$PATH"
+unset MANPATH
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 ZSH_THEME=""
 
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.config-scripts/.aliases
 
-# Create a new directory and enter it
-function mkd() {
-	mkdir -p "$@" && cd "$@"
-}
+for file in ~/.config-scripts/.{aliases,functions}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
 
+# Remove anoying beep from hyperterm
 unsetopt beep
 
 if [ -f /Users/jcelik/.tnsrc ]; then 
