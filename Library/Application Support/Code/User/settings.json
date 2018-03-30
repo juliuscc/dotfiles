@@ -1,0 +1,30 @@
+{
+	"terminal.integrated.fontFamily": "Inconsolata for Powerline",
+	"window.zoomLevel": 0,
+	"workbench.startupEditor": "newUntitledFile",
+	"explorer.confirmDelete": false,
+	"editor.minimap.enabled": false,
+	"C_Cpp.intelliSenseEngine": "Default",
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true,
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"pugbeautify.fillTab": true,
+	"pugbeautify.omitDiv": true,
+	"workbench.editor.showTabs": true,
+	"window.restoreWindows": "none",
+	"window.restoreFullscreen": true,
+	"markdownTableFormatter.enable": true,
+	// "[c]": {
+	// 	"editor.formatOnSave": false
+	// }
+	"editor.detectIndentation": false,
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"git.confirmSync": false,
+	"emmet.includeLanguages": {
+		"HTML (Eex)": "html"
+	},
+	"explorer.confirmDragAndDrop": false
+}
