@@ -9,6 +9,10 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
+#GO
+export GOPATH=/Users/$(whoami)/Coding/go
+export PATH=$GOPATH/bin:$PATH
+
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
@@ -17,6 +21,7 @@ export HISTCONTROL=ignoredups
 ZSH_THEME=""
 
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+# plugins=(zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -37,3 +42,5 @@ fi
 
 autoload -U promptinit; promptinit
 prompt pure
+# added by travis gem
+[ -f /Users/jcelik/.travis/travis.sh ] && source /Users/jcelik/.travis/travis.sh
