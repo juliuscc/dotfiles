@@ -1,6 +1,6 @@
 {
 	"terminal.integrated.fontFamily": "Inconsolata for Powerline",
-	"window.zoomLevel": 0,
+	"window.zoomLevel": 1,
 	"workbench.startupEditor": "newUntitledFile",
 	"explorer.confirmDelete": false,
 	"editor.minimap.enabled": false,
@@ -14,6 +14,7 @@
 	"pugbeautify.omitDiv": true,
 	"workbench.editor.showTabs": true,
 	"window.restoreWindows": "none",
+	"files.hotExit": "off",
 	"window.restoreFullscreen": true,
 	"markdownTableFormatter.enable": true,
 	// "[c]": {
@@ -26,5 +27,24 @@
 	"emmet.includeLanguages": {
 		"HTML (Eex)": "html"
 	},
-	"explorer.confirmDragAndDrop": false
+	"explorer.confirmDragAndDrop": false,
+	"workbench.sideBar.location": "right",
+	"[elixir]": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true
+	},
+	"[elm]": {
+		"editor.tabSize": 4,
+		"editor.insertSpaces": true
+	},
+	"indentRainbow.colors": [
+		"rgba(64,64,16,0.5)",
+		"rgba(64,32,64,0.5)",
+		"rgba(32,64,32,0.5)",
+		"rgba(16,48,48,0.5)"
+	],
+	"breadcrumbs.enabled": true,
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"php-cs-fixer.lastDownload": 1543147285625,
+	"typescript.updateImportsOnFileMove.enabled": "always"
 }
