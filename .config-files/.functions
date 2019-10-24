@@ -2,3 +2,11 @@
 function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
+
+# Navigate in directories with keyboard shortcuts
+fpath=(  /Users/jcelik/.config-files/dirnav "${fpath[@]}" )
+autoload -Uz dirnav
+dirnav
+
+bindkey "^[[1;2D" _dirnav_parent     # shift-left
+bindkey "^[[1;2C" _dirnav_child      # shift-right
