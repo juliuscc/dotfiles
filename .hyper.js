@@ -14,7 +14,7 @@ module.exports = {
 		cursorColor: 'rgba(248,28,229,0.8)',
 
 		// `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-		cursorShape: 'BEAM',
+		cursorShape: 'BLOCK',
 
 		// set to true for blinking cursor
 		cursorBlink: false,
@@ -104,7 +104,7 @@ module.exports = {
 	//   `hyperpower`
 	//   `@company/project`
 	//   `project#1.0.1`
-	plugins: ['hyper-snazzy'],
+	plugins: ['hyper-snazzy', 'hypercwd'],
 
 	// in development, you can create a directory under
 	// `~/.hyper_plugins/local/` and include it here
