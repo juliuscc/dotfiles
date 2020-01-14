@@ -1,7 +1,7 @@
 # Pure Prompt + Hyper bug
 export LANG="en_US.UTF-8"
 
-# Fix correct pathes
+# Fix correct paths
 export ZSH=/Users/jcelik/.oh-my-zsh
 export PATH=/usr/local/bin:$PATH
 export PATH="$HOME/.yarn/bin:$PATH"
