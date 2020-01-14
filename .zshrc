@@ -1,4 +1,4 @@
-# Prompt + Hyper bug
+# Pure Prompt + Hyper bug
 export LANG="en_US.UTF-8"
 
 # Fix correct pathes
