@@ -1,19 +1,5 @@
-# Start a bare repo for dotfiles
-# git init --bare $HOME/.cfg
-# alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-# config config --local status.showUntrackedFiles no
-# echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
-
 # Ease config
 alias zshconfig="code ~/.zshrc"
-alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
-
-# Find ip addresses
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
-
-# Lock the screen
-alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 # Git
 alias gstat="git status"
